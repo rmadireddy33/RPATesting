@@ -63,8 +63,8 @@ pipeline {
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'DEV',
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: '8DEv1AMNXczW3y4U15LL3jYf62jK93n5')
-			//credentials: UserPass('pOSC9EqPbB1Ns8i3twmjhRGSGArFpe1I3s4GLWmCgLtiQ')
+	                //credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: '8DEv1AMNXczW3y4U15LL3jYf62jK93n5')
+			credentials: UserPass('pOSC9EqPbB1Ns8i3twmjhRGSGArFpe1I3s4GLWmCgLtiQ')
 	
 
 	        )
