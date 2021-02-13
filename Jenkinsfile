@@ -11,7 +11,6 @@ pipeline {
 	        UIPATH_ORCH_LOGICAL_NAME = "rmadireddy33"
 	        UIPATH_ORCH_TENANT_NAME = "rmadireddy33"
 	        UIPATH_ORCH_FOLDER_NAME = "Shared"
-		WORKSPACE = "C:\\JenkinsWorkSpace"
 	    }
 	
 
