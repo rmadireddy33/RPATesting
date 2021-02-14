@@ -10,10 +10,10 @@
         "C:\\Users\\ravin\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\ravin\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\ravin\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\uipath.excel.activities/2.5.1\\lib/net452/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\uipath.excel.activities/2.5.1\\lib/net452/UiPath.Excel.Activities.dll",
@@ -73,10 +73,10 @@
         "C:\\Users\\ravin\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/System.Windows.Interactivity.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\caliburn.micro.core/3.0.1\\lib/net45/Caliburn.Micro.dll",
-        "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
@@ -96,8 +96,8 @@
         "C:\\Users\\ravin\\.nuget\\packages\\uipath.uiautomation.activities/19.1.0\\lib/net461/UiPath.Wizards.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.NeuralNet.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.dll",
-        "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Package.dll"
+        "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Package.dll",
+        "C:\\Users\\ravin\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ravin\\.nuget\\packages\\uipath.uiautomation.activities\\19.1.0"
     }
@@ -381,10 +381,10 @@
         "Version": "2.8.0"
       },
       "Assemblies": [
-        "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.Toolkit.dll"
       ],
@@ -447,10 +447,10 @@
         "Version": "2.4.1"
       },
       "Assemblies": [
-        "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OOXML.dll",
         "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll"
       ],
       "Path": "C:\\Users\\ravin\\.nuget\\packages\\npoi\\2.4.1"
     },

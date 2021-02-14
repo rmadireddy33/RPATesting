@@ -1019,8 +1019,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "TestingSwetha",
-      "projectName": "TestingSwetha",
+      "projectUniqueName": "GitDemoTest",
+      "projectName": "GitDemoTest",
       "projectPath": "C:\\Users\\ravin\\OneDrive\\Documents\\GitHub\\RPATesting\\.local",
       "packagesPath": "C:\\Users\\ravin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ravin\\OneDrive\\Documents\\GitHub\\RPATesting\\.local"
