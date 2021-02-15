@@ -56,7 +56,7 @@ pipeline {
 	         // Deploy Stages
 	        stage('Deploy to UAT') {
 			when{
-			expression{${BRANCH_NAME} == 'development'}
+			expression{"${BRANCH_NAME}" == 'development'}
 			}
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
@@ -80,7 +80,7 @@ pipeline {
 	         // Deploy to Production Step
 	        stage('Deploy to Production') {
 			when{
-			expression{${BRANCH_NAME} == 'master'}
+			expression{"${BRANCH_NAME}" == 'master'}
 			}
 	            steps {
 	                echo 'Deploy to Production'
