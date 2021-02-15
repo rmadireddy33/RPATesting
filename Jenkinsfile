@@ -67,7 +67,6 @@ pipeline {
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey')
 			//credentials: UserPass('pOSC9EqPbB1Ns8i3twmjhRGSGArFpe1I3s4GLWmCgLtiQ')
 	
-
 	        )
 	            }
 	        }
@@ -104,7 +103,7 @@ pipeline {
 	        }
 	        always {
 	            /* Clean workspace if success */
-	            cleanWs()
+	            //cleanWs()
 	        }
 	    }
 	
