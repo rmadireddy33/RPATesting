@@ -56,7 +56,7 @@ pipeline {
 	         // Deploy Stages
 	        stage('Deploy to UAT') {
 			when{
-			expression{"${BRANCH_NAME}" == 'development'}
+			expression{"${BRANCH_NAME}" == 'Development'}
 			}
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
