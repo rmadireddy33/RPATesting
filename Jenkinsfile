@@ -39,8 +39,8 @@ pipeline {
 	                UiPathPack (
 	                      outputPath: "Output\\${env.BUILD_NUMBER}",
 	                      projectJsonPath: "project.json",
-	                     // version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
-						  version: AutoVersion(),
+	                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+						  //version: AutoVersion(),
 	                      useOrchestrator: false
 	        )
 	            }
@@ -55,6 +55,9 @@ pipeline {
 
 	         // Deploy Stages
 	        stage('Deploy to UAT') {
+			when{
+			expression{"${BRANCH_NAME}" == 'Development'}
+			}
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
@@ -67,7 +70,6 @@ pipeline {
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey')
 			//credentials: UserPass('pOSC9EqPbB1Ns8i3twmjhRGSGArFpe1I3s4GLWmCgLtiQ')
 	
-
 	        )
 	            }
 	        }
@@ -77,6 +79,9 @@ pipeline {
 
 	         // Deploy to Production Step
 	        stage('Deploy to Production') {
+			when{
+			expression{"${BRANCH_NAME}" == 'master'}
+			}
 	            steps {
 	                echo 'Deploy to Production'
 	                }
@@ -105,6 +110,7 @@ pipeline {
 	        always {
 	            /* Clean workspace if success */
 	            cleanWs()
+				echo 'Always'
 	        }
 	    }
 	
