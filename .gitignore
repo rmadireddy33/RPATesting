@@ -9,7 +9,7 @@ bin-release/
 
 # Executables
 *.swf
-*.air
+*.ai
 *.ipk
 *.apk
 
