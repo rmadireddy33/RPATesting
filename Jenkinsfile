@@ -84,6 +84,17 @@ pipeline {
 			}
 	            steps {
 	                echo 'Deploy to Production'
+					  UiPathDeploy (
+	                packagePath: "Output\\${env.BUILD_NUMBER}",
+	                orchestratorAddress: "${UIPATH_ORCH_URL}",
+	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+	                environments: 'DEV',
+	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
+	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey')
+			//credentials: UserPass('pOSC9EqPbB1Ns8i3twmjhRGSGArFpe1I3s4GLWmCgLtiQ')
+	
+	        )
 	                }
 	            }
 	    }
