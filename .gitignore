@@ -9,8 +9,8 @@ bin-release/
 
 # Executables
 *.swf
-*.air
-*.ip
+*.ai
+*.ipk
 *.apk
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
