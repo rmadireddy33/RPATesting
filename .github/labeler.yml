@@ -1,7 +1,0 @@
-  
-Version: "1"
-Labels:
-  - Label: "TestLabel"
-    any: ["*.*"]
-  - Label: "TestFileMatch"
-    any: ["cmd/.*.go", "pkg/.*.go"]
