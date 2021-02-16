@@ -4,6 +4,4 @@ Labels:
   - Label: "TestLabel"
     title: ".*"
   - Label: "TestFileMatch"
-    files: 
-      - "cmd/.*.go"
-      - "pkg/.*.go"
+    any: ["cmd/.*.go", "pkg/.*.go"]
