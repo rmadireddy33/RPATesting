@@ -12,6 +12,12 @@ pipeline {
 	        UIPATH_ORCH_TENANT_NAME = "rmadireddy33"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
 	    }
+		
+		parameters {
+        gitParameter name: 'BRANCH_TAG', 
+                     type: 'PT_BRANCH_TAG',
+                     defaultValue: 'master'
+    }
 	
 
 	    stages {
@@ -98,6 +104,29 @@ pipeline {
 	        )
 	                }
 	            }
+				
+				
+			// Checkout Basic Information
+	        stage('Checkout'){
+	            steps {
+	                echo "Checkout GIT"
+					echo "Jenkins Home ${env.JENKINS_HOME}"
+	                echo "Jenkins URL ${env.JENKINS_URL}"
+	                echo "Jenkins JOB Number ${env.BUILD_NUMBER}"
+	                echo "Jenkins JOB Name ${env.JOB_NAME}"
+	                echo "GitHub BranhName ${env.BRANCH_NAME}"
+	                checkout([$class: 'GitSCM', 
+                          branches: [[name: "${params.BRANCH_TAG}"]], 
+                          doGenerateSubmoduleConfigurations: false, 
+                          extensions: [], 
+                          gitTool: 'Default', 
+                          submoduleCfg: [], 
+                          userRemoteConfigs: [[url: 'https://github.com/rmadireddy33/RPATesting.git']]
+                        ])
+	
+
+	            }
+	        }
 	    }
 	
 
