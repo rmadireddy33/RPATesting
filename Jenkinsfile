@@ -41,7 +41,7 @@ pipeline {
 	                      projectJsonPath: "project.json",
 	                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 						  //version: AutoVersion(),
-						  echo CurrentVersion(),
+						  echo "CurrentVersion()",
 	                      useOrchestrator: false
 	        )
 	            }
