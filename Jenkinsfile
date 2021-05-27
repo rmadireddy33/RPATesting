@@ -100,27 +100,7 @@ pipeline {
 	            }
 				
 				
-			// Checkout Basic Information
-	        stage('Checkout'){
-	            steps {
-	                echo "Checkout GIT"
-					echo "Jenkins Home ${env.JENKINS_HOME}"
-	                echo "Jenkins URL ${env.JENKINS_URL}"
-	                echo "Jenkins JOB Number ${env.BUILD_NUMBER}"
-	                echo "Jenkins JOB Name ${env.JOB_NAME}"
-	                echo "GitHub BranhName ${env.BRANCH_NAME}"
-	                checkout([$class: 'GitSCM', 
-                          branches: [[name: '*/master']], 
-                         // doGenerateSubmoduleConfigurations: false, 
-                         // extensions: [], 
-                          //gitTool: 'Default', 
-                          //submoduleCfg: [], 
-                          userRemoteConfigs: [[url: 'https://github.com/rmadireddy33/RPATesting.git']]
-                        ])
-	
-
-	            }
-	        }
+			
 	    }
 	
 
